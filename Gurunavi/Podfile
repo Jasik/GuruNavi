@@ -1,0 +1,6 @@
+platform :ios, '14.0'
+
+target 'Gurunavi' do
+  use_frameworks!
+  pod 'SwiftyBeaver'
+end
