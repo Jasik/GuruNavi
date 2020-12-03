@@ -52,9 +52,10 @@
 		9FA97942257923D0003C08B1 /* Gurunavi */ = {
 			isa = PBXGroup;
 			children = (
-				9FA97943257923D0003C08B1 /* GurunaviApp.swift */,
+				9FA9795525792422003C08B1 /* shared */,
+				9FA979542579240B003C08B1 /* Extensions */,
+				9FA97953257923FF003C08B1 /* Screens */,
 				9FA97945257923D0003C08B1 /* ContentView.swift */,
-				9FA97947257923D1003C08B1 /* Assets.xcassets */,
 				9FA9794C257923D1003C08B1 /* Info.plist */,
 				9FA97949257923D1003C08B1 /* Preview Content */,
 			);
@@ -67,6 +68,29 @@
 				9FA9794A257923D1003C08B1 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		9FA97953257923FF003C08B1 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		9FA979542579240B003C08B1 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		9FA9795525792422003C08B1 /* shared */ = {
+			isa = PBXGroup;
+			children = (
+				9FA97943257923D0003C08B1 /* GurunaviApp.swift */,
+				9FA97947257923D1003C08B1 /* Assets.xcassets */,
+			);
+			path = shared;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
