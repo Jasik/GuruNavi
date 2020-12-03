@@ -1,0 +1,20 @@
+PODS:
+  - SwiftFormat/CLI (0.46.3)
+  - SwiftyBeaver (1.9.2)
+
+DEPENDENCIES:
+  - SwiftFormat/CLI
+  - SwiftyBeaver
+
+SPEC REPOS:
+  trunk:
+    - SwiftFormat
+    - SwiftyBeaver
+
+SPEC CHECKSUMS:
+  SwiftFormat: b639417da9e024b9e782f917bc9a080cf75bcb37
+  SwiftyBeaver: b8239f6bfe9e1ea3303e6139abc8c24228081d84
+
+PODFILE CHECKSUM: e5393f3309eb2ada289f39de920884ef60f0a6a2
+
+COCOAPODS: 1.10.0
