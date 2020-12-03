@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -12,6 +12,7 @@
 		9FA97946257923D0003C08B1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA97945257923D0003C08B1 /* ContentView.swift */; };
 		9FA97948257923D1003C08B1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9FA97947257923D1003C08B1 /* Assets.xcassets */; };
 		9FA9794B257923D1003C08B1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9FA9794A257923D1003C08B1 /* Preview Assets.xcassets */; };
+		9FA97965257933E9003C08B1 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA97964257933E9003C08B1 /* Logger.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		9FA97947257923D1003C08B1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9FA9794A257923D1003C08B1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		9FA9794C257923D1003C08B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9FA97964257933E9003C08B1 /* Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +70,7 @@
 		9FA97942257923D0003C08B1 /* Gurunavi */ = {
 			isa = PBXGroup;
 			children = (
+				9FA97963257933D4003C08B1 /* Logger */,
 				9FA9795525792422003C08B1 /* shared */,
 				9FA979542579240B003C08B1 /* Extensions */,
 				9FA97953257923FF003C08B1 /* Screens */,
@@ -109,6 +112,14 @@
 			path = shared;
 			sourceTree = "<group>";
 		};
+		9FA97963257933D4003C08B1 /* Logger */ = {
+			isa = PBXGroup;
+			children = (
+				9FA97964257933E9003C08B1 /* Logger.swift */,
+			);
+			path = Logger;
+			sourceTree = "<group>";
+		};
 		C0512682E7BF358373C4D4B1 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -125,11 +136,11 @@
 			buildConfigurationList = 9FA9794F257923D1003C08B1 /* Build configuration list for PBXNativeTarget "Gurunavi" */;
 			buildPhases = (
 				E979F1329D7F352FDB758C91 /* [CP] Check Pods Manifest.lock */,
+				9FA97971257934CB003C08B1 /* SwiftFormat */,
 				9FA9793C257923D0003C08B1 /* Sources */,
 				9FA9793D257923D0003C08B1 /* Frameworks */,
 				9FA9793E257923D0003C08B1 /* Resources */,
 				BD8115373B33E5DFF5FA4AB9 /* [CP] Embed Pods Frameworks */,
-				9FA9796225793330003C08B1 /* SwiftFormat */,
 			);
 			buildRules = (
 			);
@@ -185,8 +196,9 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		9FA9796225793330003C08B1 /* SwiftFormat */ = {
+		9FA97971257934CB003C08B1 /* SwiftFormat */ = {
 			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
 			buildActionMask = 2147483647;
 			files = (
 			);
@@ -201,7 +213,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "${PODS_ROOT}/SwiftFormat/CommandLineTool/swiftformat . --config $SRCROOT/.swiftformat\n";
+			shellScript = "\"${PODS_ROOT}/SwiftFormat/CommandLineTool/swiftformat\" \"$SRCROOT\"\n";
 		};
 		BD8115373B33E5DFF5FA4AB9 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -250,6 +262,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9FA97946257923D0003C08B1 /* ContentView.swift in Sources */,
+				9FA97965257933E9003C08B1 /* Logger.swift in Sources */,
 				9FA97944257923D0003C08B1 /* GurunaviApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
