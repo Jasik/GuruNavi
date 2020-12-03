@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -44,7 +44,6 @@
 				82550634705453B486A2CDA4 /* Pods-Gurunavi.debug.xcconfig */,
 				38A3B9E2E4B32F2AEA9739D2 /* Pods-Gurunavi.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -130,6 +129,7 @@
 				9FA9793D257923D0003C08B1 /* Frameworks */,
 				9FA9793E257923D0003C08B1 /* Resources */,
 				BD8115373B33E5DFF5FA4AB9 /* [CP] Embed Pods Frameworks */,
+				9FA9796225793330003C08B1 /* SwiftFormat */,
 			);
 			buildRules = (
 			);
@@ -185,6 +185,24 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		9FA9796225793330003C08B1 /* SwiftFormat */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = SwiftFormat;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "${PODS_ROOT}/SwiftFormat/CommandLineTool/swiftformat . --config $SRCROOT/.swiftformat\n";
+		};
 		BD8115373B33E5DFF5FA4AB9 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
