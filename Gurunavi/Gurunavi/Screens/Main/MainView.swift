@@ -9,6 +9,8 @@ import SwiftUI
 
 struct MainView: View {
     var body: some View {
+        TopMainView()
+        Spacer()
         Text("Hello, world!")
             .padding()
 

@@ -41,11 +41,11 @@ struct TopMainView: View {
                             .foregroundColor(.main_red)
                     }
                 })
-                
+
                 Spacer()
-                
+
                 Menu("Distance: \(distances[distance])") {
-                    Picker("Chose distance",selection: $distance) {
+                    Picker("Chose distance", selection: $distance) {
                         ForEach(0 ..< distances.count, id: \.self) {
                             Text(distances[$0])
                         }
