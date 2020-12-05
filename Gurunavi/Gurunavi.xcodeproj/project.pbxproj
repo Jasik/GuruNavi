@@ -15,6 +15,7 @@
 		9FA97965257933E9003C08B1 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA97964257933E9003C08B1 /* Logger.swift */; };
 		9FA97983257B646C003C08B1 /* TopMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA97982257B646C003C08B1 /* TopMainView.swift */; };
 		9FA979A7257B6CF6003C08B1 /* Color+Exstension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA979A6257B6CF6003C08B1 /* Color+Exstension.swift */; };
+		9FA979AB257B6F12003C08B1 /* BottomLineTextFieldStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA979AA257B6F12003C08B1 /* BottomLineTextFieldStyle.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		9FA97964257933E9003C08B1 /* Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
 		9FA97982257B646C003C08B1 /* TopMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopMainView.swift; sourceTree = "<group>"; };
 		9FA979A6257B6CF6003C08B1 /* Color+Exstension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Exstension.swift"; sourceTree = "<group>"; };
+		9FA979AA257B6F12003C08B1 /* BottomLineTextFieldStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomLineTextFieldStyle.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +76,7 @@
 		9FA97942257923D0003C08B1 /* Gurunavi */ = {
 			isa = PBXGroup;
 			children = (
+				9FA979A9257B6ECE003C08B1 /* Stylies */,
 				9FA97963257933D4003C08B1 /* Logger */,
 				9FA9795525792422003C08B1 /* Shared */,
 				9FA979542579240B003C08B1 /* Extensions */,
@@ -148,6 +151,14 @@
 			children = (
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		9FA979A9257B6ECE003C08B1 /* Stylies */ = {
+			isa = PBXGroup;
+			children = (
+				9FA979AA257B6F12003C08B1 /* BottomLineTextFieldStyle.swift */,
+			);
+			path = Stylies;
 			sourceTree = "<group>";
 		};
 		C0512682E7BF358373C4D4B1 /* Frameworks */ = {
@@ -293,6 +304,7 @@
 			files = (
 				9FA979A7257B6CF6003C08B1 /* Color+Exstension.swift in Sources */,
 				9FA97946257923D0003C08B1 /* MainView.swift in Sources */,
+				9FA979AB257B6F12003C08B1 /* BottomLineTextFieldStyle.swift in Sources */,
 				9FA97965257933E9003C08B1 /* Logger.swift in Sources */,
 				9FA97944257923D0003C08B1 /* GurunaviApp.swift in Sources */,
 				9FA97983257B646C003C08B1 /* TopMainView.swift in Sources */,
