@@ -17,7 +17,7 @@ struct BottomMainView: View {
 
             HStack {
                 Spacer()
-
+                
                 Menu("Sort") {
                     Picker("Sort restoran", selection: $sortedIndex) {
                         ForEach(0 ..< sortVariant.count, id: \.self) {
@@ -27,9 +27,9 @@ struct BottomMainView: View {
                 }
                 .foregroundColor(.main_red)
             }
-
+            
             List(rests) { rest in
-                VStack {
+                VStack(alignment: .leading) {
                     Text(rest.name)
                         .font(.title2)
                         .foregroundColor(.primary)
@@ -46,4 +46,31 @@ struct BottomMainView_Previews: PreviewProvider {
     static var previews: some View {
         BottomMainView()
     }
+}
+
+
+struct Rest: Identifiable {
+    var id = UUID()
+    let name: String
+    let type: String
+}
+
+extension Rest {
+    static let dummyRest = [
+        Rest(name: "RestoranA", type: "Sushi"),
+        Rest(name: "RestoranA", type: "Sushi"),
+        Rest(name: "RestoranA", type: "Sushi"),
+        Rest(name: "RestoranA", type: "Sushi"),
+        Rest(name: "RestoranA", type: "Sushi"),
+        Rest(name: "RestoranA", type: "Sushi"),
+        Rest(name: "RestoranA", type: "Sushi"),
+        Rest(name: "RestoranA", type: "Sushi"),
+        Rest(name: "RestoranA", type: "Sushi"),
+        Rest(name: "RestoranA", type: "Sushi"),
+        Rest(name: "RestoranA", type: "Sushi"),
+        Rest(name: "RestoranA", type: "Sushi"),
+        Rest(name: "RestoranA", type: "Sushi"),
+        Rest(name: "RestoranA", type: "Sushi"),
+        Rest(name: "RestoranA", type: "Sushi")
+    ]
 }
