@@ -54,7 +54,6 @@ struct TopMainView: View {
                 .foregroundColor(.main_red)
             }
         }
-        .padding(.horizontal, 20)
     }
 }
 
