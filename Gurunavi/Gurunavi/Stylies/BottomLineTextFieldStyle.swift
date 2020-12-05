@@ -12,7 +12,7 @@ struct BottomLineTextFieldStyle: TextFieldStyle {
         VStack {
             configuration
             Rectangle()
-                .frame(height: 0.5, alignment: .bottom)
+                .frame(height: 0.8, alignment: .bottom)
                 .foregroundColor(.main_red)
         }
     }
