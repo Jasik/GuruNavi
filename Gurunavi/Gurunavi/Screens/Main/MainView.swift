@@ -9,12 +9,11 @@ import SwiftUI
 
 struct MainView: View {
     var body: some View {
-        Text("Hello, world!")
-            .padding()
-
-        Button("CLick") {
-            Logger.info("clicked")
+        VStack(spacing: 20) {
+            TopMainView()
+            BottomMainView()
         }
+        .padding(.horizontal, 20)
     }
 }
 
