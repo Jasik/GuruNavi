@@ -14,10 +14,11 @@ struct BottomMainView: View {
     var body: some View {
         VStack {
             Divider()
+                .padding(.bottom, 20)
 
             HStack {
                 Spacer()
-                
+
                 Menu("Sort") {
                     Picker("Sort restoran", selection: $sortedIndex) {
                         ForEach(0 ..< sortVariant.count, id: \.self) {
@@ -27,7 +28,7 @@ struct BottomMainView: View {
                 }
                 .foregroundColor(.main_red)
             }
-            
+
             List(rests) { rest in
                 VStack(alignment: .leading) {
                     Text(rest.name)
@@ -47,7 +48,6 @@ struct BottomMainView_Previews: PreviewProvider {
         BottomMainView()
     }
 }
-
 
 struct Rest: Identifiable {
     var id = UUID()
@@ -71,6 +71,6 @@ extension Rest {
         Rest(name: "RestoranA", type: "Sushi"),
         Rest(name: "RestoranA", type: "Sushi"),
         Rest(name: "RestoranA", type: "Sushi"),
-        Rest(name: "RestoranA", type: "Sushi")
+        Rest(name: "RestoranA", type: "Sushi"),
     ]
 }
