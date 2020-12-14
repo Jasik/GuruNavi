@@ -15,7 +15,7 @@ struct RestRow: View {
                     Image("1-1")
                         .resizable()
                         .scaledToFill()
-                        .frame(width: 110, height: 110)
+                        .frame(width: 90, height: 90)
                         .clipShape(Circle())
                         .shadow(color: .black, radius: 10)
                 }
@@ -25,6 +25,7 @@ struct RestRow: View {
                         .font(.title)
                         .bold()
                         .foregroundColor(.primary)
+                        .lineLimit(2)
 
                     Text("Restoran name 2")
                         .font(.title2)
@@ -50,9 +51,9 @@ struct RestRow: View {
                     }
                     Text("300 m")
                 }
-                
+
                 Spacer()
-                
+
                 VStack {
                     HStack {
                         Image(systemName: "star.fill")
@@ -66,7 +67,7 @@ struct RestRow: View {
                 }
             }
         }
-        .padding()
+        .padding(.vertical, 20)
     }
 }
 
