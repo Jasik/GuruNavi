@@ -21,7 +21,7 @@ struct DetailView: View {
             }
             .aspectRatio(4 / 3, contentMode: .fit)
             .edgesIgnoringSafeArea(.top)
-            
+
             HStack {
                 VStack(alignment: .leading) {
                     Text("Name of Restoran")
@@ -31,29 +31,29 @@ struct DetailView: View {
                         .font(.title2)
                         .foregroundColor(.secondary)
                 }
-                
+
                 Spacer()
             }
             .padding(.horizontal, 20)
-            
+
             HStack {
                 Text("Distance: ")
                 Text("500m")
-                
+
                 Spacer()
-                
+
                 Image(systemName: "star.fill")
                     .foregroundColor(.yellow)
                 Text("3.0/5.0")
             }
             .padding(.horizontal, 20)
-            
+
             HStack {
                 Text("Address: Japan Tokyo Gotanda 2-13-20 1B")
                 Spacer()
             }
             .padding(.horizontal, 20)
-            
+
             Spacer()
         }
     }

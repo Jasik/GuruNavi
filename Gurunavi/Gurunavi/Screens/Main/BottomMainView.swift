@@ -29,15 +29,8 @@ struct BottomMainView: View {
                 .foregroundColor(.main_red)
             }
 
-            List(rests) { rest in
-                VStack(alignment: .leading) {
-                    Text(rest.name)
-                        .font(.title2)
-                        .foregroundColor(.primary)
-                    Text(rest.type)
-                        .font(.title3)
-                        .foregroundColor(.secondary)
-                }
+            List(rests) { _ in
+                RestRow()
             }
         }
     }

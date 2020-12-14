@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		37D12E8091E48F779DDE6077 /* Pods_Gurunavi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7ACEBB8AF2D866416D832176 /* Pods_Gurunavi.framework */; };
+		9F7CD028257E69E400583671 /* RestRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F7CD027257E69E400583671 /* RestRow.swift */; };
 		9FA97944257923D0003C08B1 /* GurunaviApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA97943257923D0003C08B1 /* GurunaviApp.swift */; };
 		9FA97946257923D0003C08B1 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA97945257923D0003C08B1 /* MainView.swift */; };
 		9FA97948257923D1003C08B1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9FA97947257923D1003C08B1 /* Assets.xcassets */; };
@@ -25,6 +26,7 @@
 		38A3B9E2E4B32F2AEA9739D2 /* Pods-Gurunavi.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gurunavi.release.xcconfig"; path = "Target Support Files/Pods-Gurunavi/Pods-Gurunavi.release.xcconfig"; sourceTree = "<group>"; };
 		7ACEBB8AF2D866416D832176 /* Pods_Gurunavi.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Gurunavi.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		82550634705453B486A2CDA4 /* Pods-Gurunavi.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gurunavi.debug.xcconfig"; path = "Target Support Files/Pods-Gurunavi/Pods-Gurunavi.debug.xcconfig"; sourceTree = "<group>"; };
+		9F7CD027257E69E400583671 /* RestRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestRow.swift; sourceTree = "<group>"; };
 		9FA97940257923D0003C08B1 /* Gurunavi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Gurunavi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9FA97943257923D0003C08B1 /* GurunaviApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GurunaviApp.swift; sourceTree = "<group>"; };
 		9FA97945257923D0003C08B1 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
@@ -143,6 +145,7 @@
 				9FA97945257923D0003C08B1 /* MainView.swift */,
 				9FA97982257B646C003C08B1 /* TopMainView.swift */,
 				9FA979B0257B9F18003C08B1 /* BottomMainView.swift */,
+				9F7CD027257E69E400583671 /* RestRow.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -337,6 +340,7 @@
 			files = (
 				9FA979BC257C6630003C08B1 /* PagingView.swift in Sources */,
 				9FA979A7257B6CF6003C08B1 /* Color+Exstension.swift in Sources */,
+				9F7CD028257E69E400583671 /* RestRow.swift in Sources */,
 				9FA979B8257C6602003C08B1 /* DetailView.swift in Sources */,
 				9FA97946257923D0003C08B1 /* MainView.swift in Sources */,
 				9FA979AB257B6F12003C08B1 /* BottomLineTextFieldStyle.swift in Sources */,
